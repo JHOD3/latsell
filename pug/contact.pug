@@ -13,9 +13,9 @@ block title
 block content
     .pt-px-xs-60
         section#about
-            div.pt-px-md-150.pt-px-xs-20.mx-md-auto
+            div.pt-px-md-150.pt-px-xs-50.mx-md-auto
                 h2.font-px-40.font-px-xs-24.text-center.text-white.mb-4.fw-300(data-aos="fade-up", data-aos-duration="800") Contáctenos
-                form.card.col-md-7.mx-md-auto.pl-px-md-100.pr-px-md-100.pt-px-md-80.pb-px-md-80#form-contact(method="post", action="php/send.php")
+                form.card.col-md-7.col-10.mx-auto.pl-px-md-100.pr-px-md-100.pt-px-md-80.pl-px-xs-30.pr-px-xs-30.pt-px-xs-30.pb-px-xs-30.pb-px-md-80#form-contact(method="post", action="php/send.php")
                     .mb-3
                         label.form-label.pl-px-md-10(for='name') Nombre y apellido
                         input#name.form-control(type='text' aria-describedby='nameHelp', name="full_name")
@@ -32,7 +32,7 @@ block content
                         label.form-label.pl-px-md-10(for='message') Mensaje
                         textarea#message.form-control(aria-describedby='messageHelp', rows="10", name="message")
                     .mb-2.mt-4
-                        button.btn.btn-primary(type="submit") Contacto
+                        button.btn.btn-primary.col-12.col-md-auto(type="submit") Contacto
 block script
     script(src="js/jquery.validate.js")
     script(src="js/validator-form-contact.js")
