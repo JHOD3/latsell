@@ -61387,7 +61387,7 @@ body {
 }
 @media only screen and (max-width: 576px) {
   .img-home {
-    width: 120%;
+    width: 100%;
     position: relative;
     margin-left: 0;
     top: 0;
@@ -69414,6 +69414,24 @@ body {
 
     .height-100 {
       height: 360px;
+    }
+
+    .height-300-px {
+      height: 300px;
+    }
+
+    button, [type=button], [type=reset], [type=submit] {
+      -webkit-appearance: button-bevel !important;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .fw-mac-500 {
+        font-weight: 500 !important;
+      }
+
+      h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+        font-weight: 300 !important;
+      }
     }
   }
 }
