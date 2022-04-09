@@ -43,29 +43,29 @@
       <section id="about">
         <div class="pt-px-md-150 pt-px-xs-20 mx-md-auto">
           <h2 class="font-px-40 font-px-xs-24 text-center text-white mb-4 fw-300" data-aos="fade-up" data-aos-duration="800">Contáctenos</h2>
-          <form class="card col-md-7 mx-md-auto pl-px-md-100 pr-px-md-100 pt-px-md-80 pb-px-md-80">
+          <form class="card col-md-7 mx-md-auto pl-px-md-100 pr-px-md-100 pt-px-md-80 pb-px-md-80" id="form-contact" method="post" action="php/send.php">
             <div class="mb-3">
-              <label class="form-label" for="name">Nombre y apellido</label>
-              <input class="form-control" id="name" type="text" aria-describedby="nameHelp"/>
+              <label class="form-label pl-px-md-10" for="name">Nombre y apellido</label>
+              <input class="form-control" id="name" type="text" aria-describedby="nameHelp" name="full_name"/>
             </div>
             <div class="mb-3">
-              <label class="form-label" for="businnes">Nombre de la empresa</label>
-              <input class="form-control" id="businnes" type="text" aria-describedby="businnesHelp"/>
+              <label class="form-label pl-px-md-10" for="businnes">Nombre de la empresa</label>
+              <input class="form-control" id="businnes" type="text" aria-describedby="businnesHelp" name="businnes"/>
             </div>
             <div class="mb-3">
-              <label class="form-label" for="email">Email</label>
-              <input class="form-control" id="email" type="email" aria-describedby="emailHelp"/>
+              <label class="form-label pl-px-md-10" for="email">Email</label>
+              <input class="form-control" id="email" type="email" aria-describedby="emailHelp" name="email"/>
             </div>
             <div class="mb-3">
-              <label class="form-label" for="phone">Teléfono</label>
-              <input class="form-control" id="phone" type="text" aria-describedby="phoneHelp"/>
+              <label class="form-label pl-px-md-10" for="phone">Teléfono</label>
+              <input class="form-control" id="phone" type="text" aria-describedby="phoneHelp" name="phone"/>
             </div>
             <div class="mb-3">
-              <label class="form-label" for="message">Mensaje</label>
-              <textarea class="form-control" id="message" aria-describedby="messageHelp" rows="10"></textarea>
+              <label class="form-label pl-px-md-10" for="message">Mensaje</label>
+              <textarea class="form-control" id="message" aria-describedby="messageHelp" rows="10" name="message"></textarea>
             </div>
             <div class="mb-2 mt-4">
-              <buttom class="btn btn-primary" aria-current="page" href="contact.html">Contacto</buttom>
+              <button class="btn btn-primary" type="submit">Contacto</button>
             </div>
           </form>
         </div>
@@ -82,6 +82,8 @@
     <script src="node_modules/@popperjs/dist/umd/popper.min.js"> </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/validator-form-contact.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

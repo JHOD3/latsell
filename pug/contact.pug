@@ -15,21 +15,24 @@ block content
         section#about
             div.pt-px-md-150.pt-px-xs-20.mx-md-auto
                 h2.font-px-40.font-px-xs-24.text-center.text-white.mb-4.fw-300(data-aos="fade-up", data-aos-duration="800") Contáctenos
-                form.card.col-md-7.mx-md-auto.pl-px-md-100.pr-px-md-100.pt-px-md-80.pb-px-md-80
+                form.card.col-md-7.mx-md-auto.pl-px-md-100.pr-px-md-100.pt-px-md-80.pb-px-md-80#form-contact(method="post", action="php/send.php")
                     .mb-3
-                        label.form-label(for='name') Nombre y apellido
-                        input#name.form-control(type='text' aria-describedby='nameHelp')
+                        label.form-label.pl-px-md-10(for='name') Nombre y apellido
+                        input#name.form-control(type='text' aria-describedby='nameHelp', name="full_name")
                     .mb-3
-                        label.form-label(for='businnes') Nombre de la empresa
-                        input#businnes.form-control(type='text' aria-describedby='businnesHelp')
+                        label.form-label.pl-px-md-10(for='businnes') Nombre de la empresa
+                        input#businnes.form-control(type='text' aria-describedby='businnesHelp', name="businnes")
                     .mb-3
-                        label.form-label(for='email') Email
-                        input#email.form-control(type='email' aria-describedby='emailHelp')
+                        label.form-label.pl-px-md-10(for='email') Email
+                        input#email.form-control(type='email' aria-describedby='emailHelp', name="email")
                     .mb-3
-                        label.form-label(for='phone') Teléfono
-                        input#phone.form-control(type='text' aria-describedby='phoneHelp')
+                        label.form-label.pl-px-md-10(for='phone') Teléfono
+                        input#phone.form-control(type='text' aria-describedby='phoneHelp', name="phone")
                     .mb-3
-                        label.form-label(for='message') Mensaje
-                        textarea#message.form-control(aria-describedby='messageHelp', rows="10")
+                        label.form-label.pl-px-md-10(for='message') Mensaje
+                        textarea#message.form-control(aria-describedby='messageHelp', rows="10", name="message")
                     .mb-2.mt-4
-                        buttom.btn.btn-primary(aria-current='page' href='contact.html') Contacto
+                        button.btn.btn-primary(type="submit") Contacto
+block script
+    script(src="js/jquery.validate.js")
+    script(src="js/validator-form-contact.js")
