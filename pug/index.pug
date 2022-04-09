@@ -1,0 +1,77 @@
+extends ./layouts/_main
+block title 
+    title Inicio
+block content
+    .pt-px-xs-60
+        embed(src="images/fondo-home.svg", style="z-index:-1;margin-top: -4rem;").position-absolute.d-md-block.d-none
+        section#home.container
+            .row
+                div.col-md-8.pt-px-md-147.pt-px-xs-40.pb-px-xs-25
+                    h1.font-px-55.line-height-px-72.font-px-xs-30.text-center.text-md-start(data-aos="fade-up", data-aos-duration="800")  El puente para
+                        span.text-primary.fw-bold llevar tecnología
+                        |a diferentes
+                        |rincones de Latam
+                    div.text-center.text-md-start.font-px-xs-11(data-aos="fade-up", data-aos-duration="800" data-aos-delay="300") Distribuidores Mayoristas de las siguientes marcas
+                    div.justify-content-md-start.justify-content-center.d-flex
+                        img.logo-sansung(src="images/sansung.svg", alt="", width="100").mr-px-md-20.mr-px-xs-10(data-aos="flip-left", data-aos-anchor-placement="center-bottom", data-aos-duration="800" data-aos-delay="500")
+                        img.logo-hp(src="images/hp.svg", alt="", width="38").mr-px-md-20.mr-px-xs-10(data-aos="flip-left", data-aos-anchor-placement="center-bottom", data-aos-duration="800" data-aos-delay="550")
+                        img.logo-xiaomi(src="images/xiaomi.svg", alt="", width="102").mr-px-md-20.mr-px-xs-10(data-aos="flip-left", data-aos-anchor-placement="center-bottom", data-aos-duration="800" data-aos-delay="600")
+                        img.logo-motorola(src="images/motorola.svg", alt="", width="149").mr-px-md-20.mr-px-xs-10(data-aos="flip-left", data-aos-anchor-placement="center-bottom", data-aos-duration="800" data-aos-delay="650")
+                        img.logo-huawey(src="images/huawey.svg", alt="", width="118")(data-aos="flip-left", data-aos-anchor-placement="center-bottom", data-aos-duration="800" data-aos-delay="700")
+                div.col-md-4.containt-xs.contain-md
+                    img(src="images/background-home.svg", alt="").img-home
+        section#solutions.pt-px-md-200.container
+            div.text-center.pt-px-md-150.pt-px-xs-50
+                h2.font-px-40.font-px-xs-24(data-aos="fade-up", data-aos-duration="800") Su empresa.
+                h4.font-px-40.font-px-xs-24.text-primary.fw-bold(data-aos="fade-up", data-aos-duration="850") Nuestras soluciones.
+            include ./components/_section_1
+            include ./components/_section_2
+            include ./components/_section_3
+        section#committed
+            div.mt-px-md-100.mt-px-xs-60
+                div.position-absolute.mt-px-md-100.mt-px-xs-10
+                    div.row.col-md-7.mx-auto.pt-px-md-150.pt-px-xs-50.align-items-center
+                        .col-md-6.col-12(data-aos="fade-up", data-aos-duration="1000", data-aos-delay="500", data-aos-offset="100")
+                            h2.font-px-md-50.font-px-xs-27.text-white.text-end.fw-300.text-md-end.text-center.d-md-block.d-none Comprometidos <br>
+                                span con el medio ambiente
+                            h2.font-px-md-50.font-px-xs-27.text-white.text-end.fw-300.text-md-end.text-center.d-md-none.d-block Comprometidos con<br>
+                                span.fw-bold el medio ambiente
+                        .col-md-1.justify-content-center.d-md-flex.d-none
+                            .raya-vertical
+                        .col-md-5.col-10.mt-px-xs-20.mx-auto(data-aos="fade-up", data-aos-duration="1000", data-aos-delay="600", data-aos-offset="100")
+                            span.font-px-md-18.font-px-xs-14.text-white.fw-300.justify-content-md-start.justify-content-center.d-flex.text-md-start.text-center   La misión sustentable de Latsell es
+                                | comercializar equipos que no dañen el
+                                | medio ambiente, respeten a la comunidad
+                                | local y estén en cumplimiento de la legislación
+                                | ambiental vigente.
+                embed(src="images/img-section-4-ani.svg").d-md-block.d-none
+                embed(src="images/img-section-4-ani-m.svg", style="width: 100vw").d-md-none.d-block.p-0
+
+        section#why.container.mb-5
+            div.text-center.pt-px-md-100.pt-px-xs-20
+                h2.font-px-40.font-px-xs-24 Por qué <span class="text-primary fw-bold">LatSell</span>
+            div.row.mt-px-md-100.mt-px-xs-50.col-md-11.mx-md-auto
+                .col-md-3.col-6(data-aos="fade-up", data-aos-duration="1000", data-aos-delay="500", data-aos-offset="100")
+                    .card.text-center.px-3.py-md-5.py-4
+                        embed(src="images/icons/parlante.svg").icon.mx-auto.mb-px-md-25.mb-px-xs-20
+                        h5.font-px-md-21.font-px-xs-15
+                            span.text-primary.fw-bold Grandes ofertas <br>
+                            span disponibles solo para miembros
+                .col-md-3.col-6(data-aos="fade-up", data-aos-duration="1000", data-aos-delay="1100", data-aos-offset="100")
+                    .card.text-center.px-3.py-md-5.py-4
+                        embed(src="images/icons/estrella.svg").icon.mx-auto.mb-px-md-25.mb-px-xs-20
+                        h5.font-px-md-21.font-px-xs-15
+                            span.text-primary.fw-bold Grandes ofertas <br>
+                            span disponibles solo para miembros
+                .col-md-3.col-6.mt-px-xs-20(data-aos="fade-up", data-aos-duration="1000", data-aos-delay="1400", data-aos-offset="100")
+                    .card.text-center.px-3.py-md-5.py-4
+                        embed(src="images/icons/llamas.svg").icon.mx-auto.mb-px-md-25.mb-px-xs-20
+                        h5.font-px-md-21.font-px-xs-15
+                            span.text-primary.fw-bold Grandes ofertas <br>
+                            span disponibles solo para miembros
+                .col-md-3.col-6.mt-px-xs-20(data-aos="fade-up", data-aos-duration="1000", data-aos-delay="1700", data-aos-offset="100")
+                    .card.text-center.px-3.py-md-5.py-4
+                        embed(src="images/icons/pagos.svg").icon.mx-auto.mb-px-md-25.mb-px-xs-20
+                        h5.font-px-md-21.font-px-xs-15
+                            span.text-primary.fw-bold Grandes ofertas <br>
+                            span disponibles solo para miembros

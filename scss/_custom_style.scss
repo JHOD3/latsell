@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif !important;
+    color:#332B40;
+    font-size:15px;
+    font-weight: normal;
+    overflow-x: hidden;
+    background-color: #FBFAFB;
+}
+@for $i from 1 through 200 {
+    .font-px-#{$i}{
+        font-size: #{$i}px;
+    }
+    .font-rem-#{$i}{
+        font-size: #{$i}rem;
+    }
+    
+    .mb-px-#{$i}{
+        margin-bottom: #{$i}px;
+    }
+    .mt-px-#{$i}{
+        margin-top: #{$i}px;
+    }
+    .ml-px-#{$i}{
+        margin-left: #{$i}px;
+    }
+    .mr-px-#{$i}{
+        margin-right: #{$i}px;
+    }
+
+    .pb-px-#{$i}{
+        padding-bottom: #{$i}px;
+    }
+    .pt-px-#{$i}{
+        padding-top: #{$i}px;
+    }
+    .pl-px-#{$i}{
+        padding-left: #{$i}px;
+    }
+    .pr-px-#{$i}{
+        padding-right: #{$i}px;
+    }
+}
+
+.background-white-opacity{
+    background: white;
+    opacity: .8;
+}
+
+.raya-vertical{
+    height: 12rem;
+    background: white;
+    width: 2px;
+    border-radius: 50%;
+}
+.fw-100{
+    font-weight: 100;
+}
+.fw-200{
+    font-weight: 200;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.icon{
+    width: 32px;
+}
+.btn-ouline{
+    background: transparent;
+    color: white;
+}
+.contain-md{
+    contain: inherit;
+}
+
+@media only screen and (min-width: 1400px) {
+    @for $i from 1 through 200 {
+        .font-px-xxl-#{$i}{
+            font-size: #{$i}px;
+        }
+        .font-rem-xxl-#{$i}{
+            font-size: #{$i}rem;
+        }
+        
+        .mb-px-xxl-#{$i}{
+            margin-bottom: #{$i}px;
+        }
+        .mt-px-xxl-#{$i}{
+            margin-top: #{$i}px;
+        }
+        .ml-px-xxl-#{$i}{
+            margin-left: #{$i}px;
+        }
+        .mr-px-xxl-#{$i}{
+            margin-right: #{$i}px;
+        }
+    
+        .pb-px-xxl-#{$i}{
+            padding-bottom: #{$i}px;
+        }
+        .pt-px-xxl-#{$i}{
+            padding-top: #{$i}px;
+        }
+        .pl-px-xxl-#{$i}{
+            padding-left: #{$i}px;
+        }
+        .pr-px-xxl-#{$i}{
+            padding-right: #{$i}px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    @for $i from 1 through 200 {
+        .font-px-xl-#{$i}{
+            font-size: #{$i}px;
+        }
+        .font-rem-xl-#{$i}{
+            font-size: #{$i}rem;
+        }
+
+        .mb-px-xl-#{$i}{
+            margin-bottom: #{$i}px;
+        }
+        .mt-px-xl-#{$i}{
+            margin-top: #{$i}px;
+        }
+        .ml-px-xl-#{$i}{
+            margin-left: #{$i}px;
+        }
+        .mr-px-xl-#{$i}{
+            margin-right: #{$i}px;
+        }
+
+        .pb-px-xl-#{$i}{
+            padding-bottom: #{$i}px;
+        }
+        .pt-px-xl-#{$i}{
+            padding-top: #{$i}px;
+        }
+        .pl-px-xl-#{$i}{
+            padding-left: #{$i}px;
+        }
+        .pr-px-xl-#{$i}{
+            padding-right: #{$i}px;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    @for $i from 1 through 200 {
+        .font-px-lg-#{$i}{
+            font-size: #{$i}px;
+        }
+        .font-rem-lg-#{$i}{
+            font-size: #{$i}rem;
+        }
+
+        .mb-px-lg-#{$i}{
+            margin-bottom: #{$i}px;
+        }
+        .mt-px-lg-#{$i}{
+            margin-top: #{$i}px;
+        }
+        .ml-px-lg-#{$i}{
+            margin-left: #{$i}px;
+        }
+        .mr-px-lg-#{$i}{
+            margin-right: #{$i}px;
+        }
+
+        .pb-px-lg-#{$i}{
+            padding-bottom: #{$i}px;
+        }
+        .pt-px-lg-#{$i}{
+            padding-top: #{$i}px;
+        }
+        .pl-px-lg-#{$i}{
+            padding-left: #{$i}px;
+        }
+        .pr-px-lg-#{$i}{
+            padding-right: #{$i}px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .img-home{
+        width: 730px;
+        position: absolute;
+        margin-left: -124px;
+        top: 0;
+        z-index: -1;
+    }
+    @for $i from 1 through 200 {
+        .line-height-px-#{$i}{
+            line-height:#{$i}px;
+        }
+        .font-px-md-#{$i}{
+            font-size: #{$i}px;
+        }
+        .font-rem-md-#{$i}{
+            font-size: #{$i}rem;
+        }
+
+        .mb-px-md-#{$i}{
+            margin-bottom: #{$i}px;
+        }
+        .mt-px-md-#{$i}{
+            margin-top: #{$i}px;
+        }
+        .ml-px-md-#{$i}{
+            margin-left: #{$i}px;
+        }
+        .mr-px-md-#{$i}{
+            margin-right: #{$i}px;
+        }
+
+        .pb-px-md-#{$i}{
+            padding-bottom: #{$i}px;
+        }
+        .pt-px-md-#{$i}{
+            padding-top: #{$i}px;
+        }
+        .pl-px-md-#{$i}{
+            padding-left: #{$i}px;
+        }
+        .pr-px-md-#{$i}{
+            padding-right: #{$i}px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-sansung{
+        width: 55px;
+    }
+    .logo-hp{
+        width: 20px;
+    }
+    .logo-xiaomi{
+        width: 56px;
+    }
+    .logo-motorola{
+        width: 81px;
+    }
+    .logo-huawey{
+        width: 64px;
+    }
+    .background-white-opacity {
+        background: white;
+        opacity:8;
+    }
+    .logo{
+        width: 120px !important;
+    }
+    .img-solutions{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    @for $i from 1 through 200 {
+        .font-px-sm-#{$i}{
+            font-size: #{$i}px;
+        }
+        .font-rem-sm-#{$i}{
+            font-size: #{$i}rem;
+        }
+
+        .mb-px-sm-#{$i}{
+            margin-bottom: #{$i}px;
+        }
+        .mt-px-sm-#{$i}{
+            margin-top: #{$i}px;
+        }
+        .ml-px-sm-#{$i}{
+            margin-left: #{$i}px;
+        }
+        .mr-px-sm-#{$i}{
+            margin-right: #{$i}px;
+        }
+
+        .pb-px-sm-#{$i}{
+            padding-bottom: #{$i}px;
+        }
+        .pt-px-sm-#{$i}{
+            padding-top: #{$i}px;
+        }
+        .pl-px-sm-#{$i}{
+            padding-left: #{$i}px;
+        }
+        .pr-px-sm-#{$i}{
+            padding-right: #{$i}px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .img-home{
+        width: 120%;
+        position: relative;
+        margin-left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .logo-sansung{
+        width: 55px;
+    }
+    .containt-xs{
+        contain: content;
+    }
+    
+    @for $i from 1 through 200 {
+        .font-px-xs-#{$i}{
+            font-size: #{$i}px;
+        }
+        .font-rem-xs-#{$i}{
+            font-size: #{$i}rem;
+        }
+        
+        .mb-px-xs-#{$i}{
+            margin-bottom: #{$i}px;
+        }
+        .mt-px-xs-#{$i}{
+            margin-top: #{$i}px;
+        }
+        .ml-px-xs-#{$i}{
+            margin-left: #{$i}px;
+        }
+        .mr-px-xs-#{$i}{
+            margin-right: #{$i}px;
+        }
+    
+        .pb-px-xs-#{$i}{
+            padding-bottom: #{$i}px;
+        }
+        .pt-px-xs-#{$i}{
+            padding-top: #{$i}px;
+        }
+        .pl-px-xs-#{$i}{
+            padding-left: #{$i}px;
+        }
+        .pr-px-xs-#{$i}{
+            padding-right: #{$i}px;
+        }
+    }
+}
+
+
+

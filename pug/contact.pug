@@ -1,0 +1,35 @@
+extends ./layouts/_main
+block style
+    style.
+        body {
+            background-color: #005ce2 !important;
+        }
+
+        .pt-px-md-100 {
+            padding-top: 10px;
+        }
+block title
+    title Inicio
+block content
+    .pt-px-xs-60
+        section#about
+            div.pt-px-md-150.pt-px-xs-20.mx-md-auto
+                h2.font-px-40.font-px-xs-24.text-center.text-white.mb-4.fw-300(data-aos="fade-up", data-aos-duration="800") Contáctenos
+                form.card.col-md-7.mx-md-auto.pl-px-md-100.pr-px-md-100.pt-px-md-80.pb-px-md-80
+                    .mb-3
+                        label.form-label(for='name') Nombre y apellido
+                        input#name.form-control(type='text' aria-describedby='nameHelp')
+                    .mb-3
+                        label.form-label(for='businnes') Nombre de la empresa
+                        input#businnes.form-control(type='text' aria-describedby='businnesHelp')
+                    .mb-3
+                        label.form-label(for='email') Email
+                        input#email.form-control(type='email' aria-describedby='emailHelp')
+                    .mb-3
+                        label.form-label(for='phone') Teléfono
+                        input#phone.form-control(type='text' aria-describedby='phoneHelp')
+                    .mb-3
+                        label.form-label(for='message') Mensaje
+                        textarea#message.form-control(aria-describedby='messageHelp', rows="10")
+                    .mb-2.mt-4
+                        buttom.btn.btn-primary(aria-current='page' href='contact.html') Contacto

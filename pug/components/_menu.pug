@@ -1,0 +1,24 @@
+nav.navbar.navbar-expand-sm.navbar-light.background-white-opacity.fixed-top
+    .container-fluid.px-md-5.mx-md-2
+        a(href='index.html').pl-px-xs-16
+            img(src="images/logo.png", type="", width="150").logo
+        a.nav-link(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar' aria-expanded='false' aria-label='Toggle navigation').d-md-none
+            span.text-muted.font-px-16.mr-px-xs-15 Menú
+            img(src="images/icons/nav-icon-bars.svg", type="" width="30")
+        #offcanvasNavbar.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasNavbarLabel')
+            .offcanvas-header
+                h5#offcanvasNavbarLabel.offcanvas-title
+                    a(href='#').pl-px-xs-16
+                        img(src="images/logo.png", type="", width="120").logo
+                div.align-items-center.d-flex
+                    span.font-px-16.mr-px-xs-10    Menú
+                    button.btn-close.text-reset(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+            .offcanvas-body.ml-px-xs-40
+                ul.navbar-nav.justify-content-center.flex-grow-1.pe-3.pt-px-xs-20.pb-px-xs-20
+                    li.nav-item
+                        a.nav-link.active.font-px-16.font-px-xs-20(aria-current='page' href='solutions.html') Soluciones
+                    li.nav-item.ml-px-md-23
+                        a.nav-link.font-px-16.font-px-xs-20(href='about.html') Quienes somos
+                ul.navbar-nav.justify-content-end
+                    li.nav-item
+                        a.btn.btn-primary(aria-current='page' href='contact.html') Contacto
